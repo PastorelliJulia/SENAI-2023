@@ -1,0 +1,12 @@
+DROP DATABASE IF EXISTS tarefas;
+CREATE DATABASE tarefas CHARSET=UTF8 COLLATE UTF8_GENERAL_CI;
+USE tarefas;
+
+CREATE TABLE tarefa (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    titulo VARCHAR(30) NOT NULL,
+    descricao VARCHAR(50) NOT NULL,
+    data_inicio DATE NOT NULL,
+    data_fim DATE NOT NULL,
+    status_tarefa VARCHAR(10) NOT NULL
+);
